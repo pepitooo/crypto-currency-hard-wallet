@@ -53,14 +53,14 @@ No need to do it, I did it and you can use it and modify it as you like.
 1. Create a USB Stick with a linux distrib of your choice
 2. Boot it on a laptop, connect to internet
 3. Open a browser, open tabs 
-  1. for generating you bitcoin or ethereum wallet (don't do it)
-  2. for Chilipeppr
+⋅⋅1. for generating you bitcoin or ethereum wallet (don't do it)
+⋅⋅2. for Chilipeppr
 4. Download my python script, verify everything is working fine, by testing with dummy values
 5. Disconnect from internet, go in a bunker without network [I love swiss basement](https://www.swissinfo.ch/eng/prepared-for-anything_bunkers-for-all/995134)
 6. Generate your paper wallet
 7. Generate both QRCode in GCode using my python script
 8. Engrave using Chilipeppr both QRCode, I will do one one each side of the aluminum
-  1. I will try to decode the public address QRCode by puting paint to fill all hole and using my smartphone to decode it
+⋅⋅1. I will try to decode the public address QRCode by puting paint to fill all hole and using my smartphone to decode it
 9. Power off your computer, remove the battery for at least 15min (should empty residual power for RAM)
 10. Destroy the usb stick
 11. Store the piece of metal on a safe and hidden place
