@@ -3,7 +3,7 @@ Building yourself a "hard" wallet for crypto currency
 
 ## Crypto currency is precious
 
-As you may know it's really important to move out all your crypto currency out from exchanges website, not because they are bad, but because there is no 100% secure solutions. 
+As you may know it's really important to move all your crypto currency out from exchanges website, not because they are bad, but because a 100% secure solution don't exist. 
 
 Some examples : 
 - 400 000 $ lost from [jaxx](https://www.cryptocoinsnews.com/users-report-losing-400000-due-to-jaxx-wallet-vulnerability/)
