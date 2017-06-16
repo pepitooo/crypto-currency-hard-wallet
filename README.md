@@ -55,7 +55,7 @@ No need to do it, I did it and you can use it and modify it as you like.
   1. for generating you bitcoin or ethereum wallet (don't do it)
   2. for Chilipeppr
 4. Download my python script, verify everything is working fine, by testing with dummy values
-5. Disconnect from internet, go in a bunker without network (I love swiss basement)[https://www.swissinfo.ch/eng/prepared-for-anything_bunkers-for-all/995134]
+5. Disconnect from internet, go in a bunker without network [I love swiss basement](https://www.swissinfo.ch/eng/prepared-for-anything_bunkers-for-all/995134)
 6. Generate your paper wallet
 7. Generate both QRCode in GCode using my python script
 8. Engrave using Chilipeppr both QRCode, I will do one one each side of the aluminum
