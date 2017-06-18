@@ -72,13 +72,13 @@ You can go in a fablab or hacker space to use CNC. but take care of curious eyes
 It's a pure python3.5 project, using only one library pyqrcode
 To install it, it's easy using pip
 
-```shell
+```
 $ pip install pyqrcode
 ```
 
 Then the gcode generator is ready to use, first get some help
 
-```shell
+```
 $ python3.5 qrcnc.py -h
 usage: qrcnc.py [-h] [-d DEPTH] [-s SIZE] [-o OUTPUT_FILE] TEXT
 
@@ -97,7 +97,7 @@ optional arguments:
 ```
 
 Then the real usage
-```shell
+```
 $ python3.5 qrcnc.py -d .7 -s 40 -o wallet_address.gcode 0x585ADc1b6268eC65C516d2E1933311d44fd8F13B
 ```
 
