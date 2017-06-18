@@ -67,6 +67,40 @@ No need to do it, I did it and you can use it and modify it as you like.
 
 You can go in a fablab or hacker space to use CNC. but take care of curious eyes.
 
-### Feel free to send me a picture of you wallet
+# Usage of the python app
 
-No, I'm joking, never show your final product to someone but you can send me some coins for a drink.
+It's a pure python3.5 project, using only one library pyqrcode
+To install it, it's easy using pip
+
+```shell
+$ pip install pyqrcode
+```
+
+Then the gcode generator is ready to use, first get some help
+
+```shell
+$ python3.5 qrcnc.py -h
+usage: qrcnc.py [-h] [-d DEPTH] [-s SIZE] [-o OUTPUT_FILE] TEXT
+
+Generate CNC QRCode GCode from a string.
+
+positional arguments:
+  TEXT                  Text to encode in a QRCode
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DEPTH, --depth DEPTH
+                        Depth of each hole of QRCode
+  -s SIZE, --size SIZE  Size in mm of the final QRCode
+  -o OUTPUT_FILE, --output OUTPUT_FILE
+                        Output GCode file
+```
+
+Then the real usage
+```shell
+$ python3.5 qrcnc.py -d .7 -s 40 -o wallet_address.gcode 0x585ADc1b6268eC65C516d2E1933311d44fd8F13B
+```
+
+# Feel free to send me a picture of you wallet
+
+No, I'm joking, never show your final product to someone but you can send me some coins for a drink. Or at least a comment to know if somebody use it.
