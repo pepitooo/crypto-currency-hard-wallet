@@ -83,7 +83,7 @@ Then the gcode generator is ready to use, first get some help
 
 ```
 $ python3.5 qrcnc.py -h
-usage: qrcnc.py [-h] [-d DEPTH] [-s SIZE] [-o OUTPUT_FILE] TEXT
+usage: qrcnc.py [-h] [-d DEPTH] (-w WIDTH | -s STEP) [-o OUTPUT_FILE] TEXT
 
 Generate CNC QRCode GCode from a string.
 
@@ -94,14 +94,16 @@ optional arguments:
   -h, --help            show this help message and exit
   -d DEPTH, --depth DEPTH
                         Depth of each hole of QRCode
-  -s SIZE, --size SIZE  Size in mm of the final QRCode
+  -w WIDTH, --width WIDTH
+                        Total size in mm of the final QRCode
+  -s STEP, --step STEP  Step per bit in mm of the final QRCode
   -o OUTPUT_FILE, --output OUTPUT_FILE
                         Output GCode file
 ```
 
 Then the real usage
 ```
-$ python3.5 qrcnc.py -d .7 -s 40 -o wallet_address.gcode 0x585ADc1b6268eC65C516d2E1933311d44fd8F13B
+$ python3.5 qrcnc.py -d .7 -w 40 -o wallet_address.gcode 0x585ADc1b6268eC65C516d2E1933311d44fd8F13B
 ```
 
 # Feel free to send me a picture of you wallet
