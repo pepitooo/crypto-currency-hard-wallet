@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import argparse
 
 import pyqrcode
@@ -77,14 +78,19 @@ class GCodeWriter(Writer):
         self.buffer.write("\n")
 
 
-def generate_gcode(text, depth, size, output_file):
+def generate_gcode(text, output_file, depth, width=None, step=None):
     text = pyqrcode.create(text, error='H')
 
     print(text.terminal())
 
     with open(output_file, 'wt') as output:
         code = text.code
-        step_mm = size / len(code)
+        if width:
+            step_mm = round(width / len(code), 2)
+        else:
+            step_mm = round(step, 2)
+
+        print('Total size of QRCode {size:.3f}mm with steps of {step:.3f}mm'.format(size=len(code)*step_mm, step=step_mm))
         writer = GCodeWriter(output, depth, step_mm)
         writer.add_header()
         for row in code:
@@ -106,13 +112,21 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--depth', dest='depth', default=1, type=float,
                         help='Depth of each hole of QRCode')
 
-    parser.add_argument('-s', '--size', dest='size', type=float, default=25,
-                        help='Size in mm of the final QRCode')
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('-w', '--width', dest='width', type=float, default=0,
+                       help='Total size in mm of the final QRCode')
+
+    group.add_argument('-s', '--step', dest='step', type=float, default=0,
+                       help='Step per bit in mm of the final QRCode')
 
     parser.add_argument('-o', '--output', dest='output_file', type=str, default='output.gcode',
-                        help='Size in mm of the final QRCode')
+                        help='Output GCode file')
 
     args = parser.parse_args()
 
-    generate_gcode(text=args.text_to_encode, depth=args.depth, size=args.size, output_file=args.output_file)
+    if args.width:
+        generate_gcode(text=args.text_to_encode, depth=args.depth, width=args.width, output_file=args.output_file)
+    else:
+        generate_gcode(text=args.text_to_encode, depth=args.depth, step=args.step, output_file=args.output_file)
+
     print('Generation of the GCode is done in {file}'.format(file=args.output_file))
