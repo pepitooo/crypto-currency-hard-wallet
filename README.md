@@ -1,6 +1,3 @@
-# cypto-currency-hard-wallet
-Building yourself a "hard" wallet for crypto currency
-
 ## Crypto currency is precious
 
 As you may know it's really important to move all your crypto currency out from exchanges website, not because they are bad, but because a 100% secure solution don't exist. 
@@ -68,6 +65,12 @@ No need to do it, I did it and you can use it and modify it as you like.
 You can go in a fablab or hacker space to use CNC. but take care of curious eyes.
 
 # Usage of the python app
+
+First you have to clone the repo and go to it
+```
+$ git clone https://github.com/pepitooo/crypto-currency-hard-wallet.git
+$ cd crypto-currency-hard-wallet
+```
 
 It's a pure python3.5 project, using only one library pyqrcode
 To install it, it's easy using pip
