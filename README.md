@@ -45,6 +45,8 @@ I choose python because it's simple, and work on all platform and there is a ton
 
 No need to do it, I did it and you can use it and modify it as you like.
 
+The path used by Drill is not optimized but work perfectly, just take more time.
+
 ### Workflow to create the hard wallet
 
 1. Create a USB Stick with a linux distrib of your choice
@@ -95,13 +97,22 @@ optional arguments:
                         Output GCode file
 ```
 
-Then the real usage
+Then the real usage, for an Ethereum wallet
 ```
 $ qr2cnc -d .7 -s 1.05 -o wallet_address.gcode 0x585ADc1b6268eC65C516d2E1933311d44fd8F13B
 
 Total size of QRCode 38.850mm with steps of 1.050mm
 Generation of the GCode is done in wallet_address.gcode
 ```
+![Terminal view](./imgs/terminal.png)
+
+
+# Pictures and video
+
+![CNC View](./imgs/chilipeppr.png)
+![Raw alu](./imgs/raw_aluminum.JPG)
+![Painted](./imgs/painted.JPG)
+![After paint](./imgs/after_paint.jpeg)
 
 # Feel free to send me a picture of you wallet
 
