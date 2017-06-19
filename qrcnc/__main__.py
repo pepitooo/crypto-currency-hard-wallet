@@ -2,6 +2,7 @@
 import argparse
 
 import pyqrcode
+import sys
 
 
 class Writer:
@@ -104,7 +105,8 @@ def generate_gcode(text, output_file, depth, width=None, step=None):
             writer.carrier_return()
         writer.add_footer()
 
-if __name__ == '__main__':
+
+def main():
     parser = argparse.ArgumentParser(description='Generate CNC QRCode GCode from a string.')
     parser.add_argument('text_to_encode', type=str, metavar='TEXT',
                         help='Text to encode in a QRCode')
@@ -123,10 +125,13 @@ if __name__ == '__main__':
                         help='Output GCode file')
 
     args = parser.parse_args()
-
     if args.width:
         generate_gcode(text=args.text_to_encode, depth=args.depth, width=args.width, output_file=args.output_file)
     else:
         generate_gcode(text=args.text_to_encode, depth=args.depth, step=args.step, output_file=args.output_file)
 
     print('Generation of the GCode is done in {file}'.format(file=args.output_file))
+
+
+if __name__ == '__main__':
+    main()
