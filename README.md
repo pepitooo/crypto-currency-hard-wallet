@@ -110,6 +110,7 @@ Generation of the GCode is done in wallet_address.gcode
 # Pictures and video
 
 ![CNC View](./imgs/chilipeppr.png)
+![drilling](./imgs/sample.gif)
 ![Raw alu](./imgs/raw_aluminum.JPG)
 ![Painted](./imgs/painted.JPG)
 ![After paint](./imgs/after_paint.jpeg)
