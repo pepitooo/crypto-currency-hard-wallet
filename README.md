@@ -28,6 +28,8 @@ I looked for a solution I can do alone at home, or safe place with offline tools
 My future wallet need to be in metal, with public and private key on it, not reconizable as crypto currency wallet by thief.
 I didn't want to spend money on it,
 
+![drilling](./imgs/sample.gif)
+
 ### How to make it real ?
 
 I build recently a [CNC machine](https://en.wikipedia.org/wiki/Numerical_control) so it was perfect to use it for this project. Engraving a QRCode on each face of a piece of metal should do the job.
