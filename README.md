@@ -66,24 +66,18 @@ You can go in a fablab or hacker space to use CNC. but take care of curious eyes
 
 # Usage of the python app
 
-First you have to clone the repo and go to it
-```
-$ git clone https://github.com/pepitooo/crypto-currency-hard-wallet.git
-$ cd crypto-currency-hard-wallet
-```
-
 It's a pure python3.5 project, using only one library pyqrcode
 To install it, it's easy using pip
 
 ```
-$ pip install pyqrcode
+$ pip install qr2cnc
 ```
 
 Then the gcode generator is ready to use, first get some help
 
 ```
-$ python3.5 qrcnc.py -h
-usage: qrcnc.py [-h] [-d DEPTH] (-w WIDTH | -s STEP) [-o OUTPUT_FILE] TEXT
+$ qr2cnc -h
+usage: qr2cnc [-h] [-d DEPTH] (-w WIDTH | -s STEP) [-o OUTPUT_FILE] TEXT
 
 Generate CNC QRCode GCode from a string.
 
@@ -103,7 +97,56 @@ optional arguments:
 
 Then the real usage
 ```
-$ python3.5 qrcnc.py -d .7 -w 40 -o wallet_address.gcode 0x585ADc1b6268eC65C516d2E1933311d44fd8F13B
+$ qr2cnc -d .7 -s 1.05 -o wallet_address.gcode 0x585ADc1b6268eC65C516d2E1933311d44fd8F13B
+
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+
+Total size of QRCode 38.850mm with steps of 1.050mm
+Generation of the GCode is done in wallet_address.gcode
 ```
 
 # Feel free to send me a picture of you wallet
