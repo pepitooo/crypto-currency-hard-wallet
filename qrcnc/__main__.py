@@ -27,7 +27,7 @@ class Writer:
 
 class GCodeWriter(Writer):
     def __init__(self, buffer, depth, step_mm, clearance=2, feedrate=600):
-        super().__init__(buffer)
+        Writer.__init__(self, buffer)
         self.x_bit_position = 0
         self.y_bit_position = 0
 
